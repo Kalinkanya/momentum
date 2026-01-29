@@ -34,6 +34,9 @@ async function getWeather() {
 
   const city = cityInput.value.trim();
 
+  error.textContent = '';
+  clearWeather();
+
   if(!city) {
     error.textContent = `Введите название города`;
     clearWeather();
