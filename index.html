@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Forum&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet">
+    <link rel="icon" href="assets/sun-icon.ico">
+    <title>momentum</title>
+  </head>
+  <body>
+    <header>
+      <div class="player__container">
+        <div class="player-controls">
+          <div class="player-controls-buttens">
+            <button type="button" class="play__btn play-prev">
+              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M860-240 500-480l360-240v480Zm-400 0L100-480l360-240v480Z"/></svg>
+            </button>
+            <button type="button" class="play__btn play">
+              <svg class="play__svg" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M320-200v-560l440 280-440 280Z"/></svg>
+              <svg class="pause__svg hidden" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M560-200v-560h160v560H560Zm-320 0v-560h160v560H240Z"/></svg>
+            </button>
+            <button type="button" class="play__btn play-next">
+              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M100-240v-480l360 240-360 240Zm400 0v-480l360 240-360 240Z"/></svg>
+            </button>
+            <button class="volume-on-off__btn">
+              <svg class="volume-on__svg" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M200-360v-240h160l200-200v640L360-360H200Zm440 40v-322q45 21 72.5 65t27.5 97q0 53-27.5 96T640-320Z"/></svg>
+              <svg class="volume-off__svg hidden" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M792-56 671-177q-25 16-53 27.5T560-131v-82q14-5 27.5-10t25.5-12L480-368v208L280-360H120v-240h128L56-792l56-56 736 736-56 56Zm-8-232-58-58q17-31 25.5-65t8.5-70q0-94-55-168T560-749v-82q124 28 202 125.5T840-481q0 53-14.5 102T784-288ZM650-422l-90-90v-130q47 22 73.5 66t26.5 96q0 15-2.5 29.5T650-422ZM480-592 376-696l104-104v208Z"/></svg>
+            </button>
+            <input
+              type="range"
+              name="volume"
+              class="controls-volume"
+              min="0"
+              max="1"
+              step="0.1"
+              value="0.5"
+            >
+          </div>
+          <div class="current-track">
+            <span class="current-track__title">Liza</span>
+          </div>
+          <div class="player-controls__progress">
+            <div class="progress">
+              <div class="progress-current"></div>
+            </div>
+            <div class="timeline">
+              <span class="timeline-start">00:00</span>
+              <span class="timeline-end">00:00</span>
+            </div>
+          </div>
+        </div>
+        <ul class="player-list"></ul>
+      </div>
+      <div class="weather">
+        <input type="text" class="city" placeholder="[Enter city]">
+        <div class="icon-temperature__container">
+          <i class="weather-icon owf"></i>
+          <span class="temperature"></span>
+        </div>
+        
+        <div class="description-container">
+          <span class="weather-description"></span>
+          <div class="wind-humidaty__container">
+            <span class="wind"></span>
+            <span class="humidity"></span>
+          </div>
+        </div>
+        <div class="weather-error"></div>
+
+      </div>
+    </header>
+    <main>
+      <div class="slider-svg">
+        <button type="button" class="slide-prev slider-svg__item">
+          <svg xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 -960 960 960" width="36px" fill="#f7f7f5"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z"/></svg>
+        </button>
+        <button type="button" class="slide-next slider-svg__item">
+          <svg xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 -960 960 960" width="36px" fill="#f7f7f5"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z"/></svg>
+        </button>
+      </div>
+      <time datetime="" class="time"></time>
+      <date class="date"></date>
+      <div class="greeting-container">
+        <span class="greeting__span"></span>
+        <input class="greeting__input" type="text" placeholder="[name]">
+      </div>
+    </main>
+    <footer>
+      <button class="change-qoute__btn">
+        <svg xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 -960 960 960" width="36px" fill="#1f1f1f"><path d="M482-160q-134 0-228-93t-94-227v-7l-64 64-56-56 160-160 160 160-56 56-64-64v7q0 100 70.5 170T482-240q26 0 51-6t49-18l60 60q-38 22-78 33t-82 11Zm278-161L600-481l56-56 64 64v-7q0-100-70.5-170T478-720q-26 0-51 6t-49 18l-60-60q38-22 78-33t82-11q134 0 228 93t94 227v7l64-64 56 56-160 160Z"/></svg>
+      </button>
+      <div class="quote">
+        <p class="quote__text"></p>
+        <span class="quote__author"></span>
+      </div>
+    </footer>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>

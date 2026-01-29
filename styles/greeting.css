@@ -1,0 +1,28 @@
+.greeting-container {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+}
+
+.greeting__span, .greeting__input {
+  font-size: 3rem;
+  flex: 1;
+  min-width: 0;
+  text-shadow: var(--box-shadow);
+}
+
+.greeting__span {
+  text-align: right;
+}
+
+.greeting__input {
+  border: none;
+  background: transparent;
+  outline: none;
+  background-clip: text;
+  -webkit-text-fill-color: var(--color-text);
+}
+
+.greeting__input::placeholder {
+  opacity: 0.6;
+}

@@ -1,0 +1,46 @@
+.weather {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  padding: 10px;
+  font-family: var(--font-ubuntu);
+}
+
+.icon-temperature__container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.temperature {
+  font-size: 36px;
+}
+
+.description-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.wind-humidaty__container {
+  display: flex;
+  gap: 20px;
+}
+
+.city {
+  font-size: 1.5rem;
+  background: transparent;
+  outline: none;
+  border: none;
+  padding-bottom: 5px;
+  border-bottom: 2px solid var(--color-text);
+}
+
+.weather-icon {
+  font-size: 3rem;
+}
+
+.weather-error {
+  color: var(--color-active);
+}

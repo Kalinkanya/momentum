@@ -1,0 +1,11 @@
+.time, .date {
+  text-shadow: var(--box-shadow);
+}
+
+.time {
+  font-size: 6rem;
+}
+
+.date {
+  font-size: 2rem;
+}

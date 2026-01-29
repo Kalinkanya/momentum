@@ -1,0 +1,74 @@
+@import url('./slider.css');
+@import url('./date-time.css');
+@import url('./greeting.css');
+@import url('./audio.css');
+@import url('./owfont-regular.css');
+@import url('./weather.css');
+@import url('./quote.css');
+
+@font-face {
+    font-family: 'Ubuntu Mono';
+    src: url('../assets/fonts/UbuntuMono-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+  --color-text: #f8f9fa;
+  --color-shadow: #1b263b;
+  --color-active: #f6bd60;
+
+  --font-ubuntu: 'Ubuntu Mono', sans-serif;
+
+  --box-shadow: 0 0 3px var(--color-shadow);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-ubuntu);
+  color: var(--color-text);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: background-image 1s ease-in-out;
+  height: 100vh;
+  width: 100vw;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
+}
+
+main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-block: 20px;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9));
+}
+
+.tttttt {
+  width: 100px;
+  height: 30px;
+}

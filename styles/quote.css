@@ -1,0 +1,15 @@
+.change-qoute__btn {
+  outline: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.change-qoute__btn svg:hover {
+  fill: var(--color-active);
+}
+
+.change-qoute__btn svg {
+  fill: var(--color-text);
+  transition: all 0.3s ease;
+}
