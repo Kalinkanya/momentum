@@ -1,0 +1,52 @@
+.change-qoute__btn {
+  outline: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.change-qoute__btn svg:hover {
+  fill: var(--color-active);
+}
+
+.change-qoute__btn svg {
+  fill: var(--color-text);
+  transition: all 0.3s ease;
+}
+
+.footer-bar {
+  display: flex;
+  width: 100%;
+  padding-inline: 40px;
+}
+
+.footer-bar__icon {
+  fill: var(--color-text);
+  margin: 20px;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.footer-bar__icon:hover {
+  fill: var(--color-active);
+  scale: 1.2;
+}
+
+.footer-bar__info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  gap: 60px;
+}
+
+.footer__logo {
+  height: 28px;
+  cursor: pointer;
+  transition: all 0.3s linear;
+  margin: 10px;
+}
+
+.footer__logo:hover {
+  scale: 1.2;
+}
