@@ -4,6 +4,7 @@ import { initGreeting } from './js/greeting.js';
 import { initAudioPlayer } from './js/audio/audio-core.js';
 import { initWeather } from './js/weather.js';
 import { initQoutes } from './js/quote.js';
+import { initModalSettings } from './js/modals.js'
 
 initSliderBg();
 initClock();
@@ -11,4 +12,5 @@ initGreeting();
 initAudioPlayer();
 initWeather();
 initQoutes();
+initModalSettings();
 

@@ -1,7 +1,13 @@
+.greeting-wrapper {
+  height: 80px;
+  line-height: 80px;
+}
+
 .greeting-container {
   display: flex;
   width: 100%;
   gap: 20px;
+  transition: all 0.5s ease;
 }
 
 .greeting__span, .greeting__input {

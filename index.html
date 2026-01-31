@@ -12,47 +12,49 @@
   </head>
   <body>
     <header>
-      <div class="player__container">
-        <div class="player-controls">
-          <div class="player-controls-buttens">
-            <button type="button" class="play__btn play-prev">
-              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M860-240 500-480l360-240v480Zm-400 0L100-480l360-240v480Z"/></svg>
-            </button>
-            <button type="button" class="play__btn play">
-              <svg class="play__svg" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M320-200v-560l440 280-440 280Z"/></svg>
-              <svg class="pause__svg hidden" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M560-200v-560h160v560H560Zm-320 0v-560h160v560H240Z"/></svg>
-            </button>
-            <button type="button" class="play__btn play-next">
-              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M100-240v-480l360 240-360 240Zm400 0v-480l360 240-360 240Z"/></svg>
-            </button>
-            <button class="volume-on-off__btn">
-              <svg class="volume-on__svg" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M200-360v-240h160l200-200v640L360-360H200Zm440 40v-322q45 21 72.5 65t27.5 97q0 53-27.5 96T640-320Z"/></svg>
-              <svg class="volume-off__svg hidden" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M792-56 671-177q-25 16-53 27.5T560-131v-82q14-5 27.5-10t25.5-12L480-368v208L280-360H120v-240h128L56-792l56-56 736 736-56 56Zm-8-232-58-58q17-31 25.5-65t8.5-70q0-94-55-168T560-749v-82q124 28 202 125.5T840-481q0 53-14.5 102T784-288ZM650-422l-90-90v-130q47 22 73.5 66t26.5 96q0 15-2.5 29.5T650-422ZM480-592 376-696l104-104v208Z"/></svg>
-            </button>
-            <input
-              type="range"
-              name="volume"
-              class="controls-volume"
-              min="0"
-              max="1"
-              step="0.1"
-              value="0.5"
-            >
-          </div>
-          <div class="current-track">
-            <span class="current-track__title">Liza</span>
-          </div>
-          <div class="player-controls__progress">
-            <div class="progress">
-              <div class="progress-current"></div>
+      <div class="audioplayer-wrapper">
+        <div class="player__container audio">
+          <div class="player-controls">
+            <div class="player-controls-buttens">
+              <button type="button" class="play__btn play-prev">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M860-240 500-480l360-240v480Zm-400 0L100-480l360-240v480Z"/></svg>
+              </button>
+              <button type="button" class="play__btn play">
+                <svg class="play__svg" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M320-200v-560l440 280-440 280Z"/></svg>
+                <svg class="pause__svg hidden" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M560-200v-560h160v560H560Zm-320 0v-560h160v560H240Z"/></svg>
+              </button>
+              <button type="button" class="play__btn play-next">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M100-240v-480l360 240-360 240Zm400 0v-480l360 240-360 240Z"/></svg>
+              </button>
+              <button class="volume-on-off__btn">
+                <svg class="volume-on__svg" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M200-360v-240h160l200-200v640L360-360H200Zm440 40v-322q45 21 72.5 65t27.5 97q0 53-27.5 96T640-320Z"/></svg>
+                <svg class="volume-off__svg hidden" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M792-56 671-177q-25 16-53 27.5T560-131v-82q14-5 27.5-10t25.5-12L480-368v208L280-360H120v-240h128L56-792l56-56 736 736-56 56Zm-8-232-58-58q17-31 25.5-65t8.5-70q0-94-55-168T560-749v-82q124 28 202 125.5T840-481q0 53-14.5 102T784-288ZM650-422l-90-90v-130q47 22 73.5 66t26.5 96q0 15-2.5 29.5T650-422ZM480-592 376-696l104-104v208Z"/></svg>
+              </button>
+              <input
+                type="range"
+                name="volume"
+                class="controls-volume"
+                min="0"
+                max="1"
+                step="0.1"
+                value="0.5"
+              >
             </div>
-            <div class="timeline">
-              <span class="timeline-start">00:00</span>
-              <span class="timeline-end">00:00</span>
+            <div class="current-track">
+              <span class="current-track__title">Liza</span>
+            </div>
+            <div class="player-controls__progress">
+              <div class="progress">
+                <div class="progress-current"></div>
+              </div>
+              <div class="timeline">
+                <span class="timeline-start">00:00</span>
+                <span class="timeline-end">00:00</span>
+              </div>
             </div>
           </div>
+          <ul class="player-list"></ul>
         </div>
-        <ul class="player-list"></ul>
       </div>
       <div class="weather">
         <input type="text" class="city" placeholder="[Enter city]">
@@ -60,7 +62,6 @@
           <i class="weather-icon owf"></i>
           <span class="temperature"></span>
         </div>
-        
         <div class="description-container">
           <span class="weather-description"></span>
           <div class="wind-humidaty__container">
@@ -69,7 +70,6 @@
           </div>
         </div>
         <div class="weather-error"></div>
-
       </div>
     </header>
     <main>
@@ -81,23 +81,29 @@
           <svg xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 -960 960 960" width="36px" fill="#f7f7f5"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z"/></svg>
         </button>
       </div>
-      <time datetime="" class="time"></time>
-      <date class="date"></date>
-      <div class="greeting-container">
-        <span class="greeting__span"></span>
+      <div class="time-wrapper">
+        <time datetime="" class="time"></time>
+      </div>
+      <div class="date-wrapper">
+        <date class="date"></date>
+      </div>
+      <div class="greeting-wrapper">
+        <div class="greeting-container greeting">
+          <span class="greeting__span"></span>
         <input class="greeting__input" type="text" placeholder="[name]">
+      </div>
       </div>
     </main>
     <footer>
-      <button class="change-qoute__btn" type="button">
-        <svg xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 -960 960 960" width="36px" fill="#1f1f1f"><path d="M482-160q-134 0-228-93t-94-227v-7l-64 64-56-56 160-160 160 160-56 56-64-64v7q0 100 70.5 170T482-240q26 0 51-6t49-18l60 60q-38 22-78 33t-82 11Zm278-161L600-481l56-56 64 64v-7q0-100-70.5-170T478-720q-26 0-51 6t-49 18l-60-60q38-22 78-33t82-11q134 0 228 93t94 227v7l64-64 56 56-160 160Z"/></svg>
-      </button>
       <div class="quote">
+        <button class="change-qoute__btn" type="button">
+          <svg xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 -960 960 960" width="36px" fill="#1f1f1f"><path d="M482-160q-134 0-228-93t-94-227v-7l-64 64-56-56 160-160 160 160-56 56-64-64v7q0 100 70.5 170T482-240q26 0 51-6t49-18l60 60q-38 22-78 33t-82 11Zm278-161L600-481l56-56 64 64v-7q0-100-70.5-170T478-720q-26 0-51 6t-49 18l-60-60q38-22 78-33t82-11q134 0 228 93t94 227v7l64-64 56 56-160 160Z"/></svg>
+        </button>
         <p class="quote__text"></p>
         <span class="quote__author"></span>
       </div>
       <div class="footer-bar">
-        <svg class="footer-bar__icon" xmlns="http://www.w3.org/2000/svg" height="42px" viewBox="0 -960 960 960" width="42px" fill="#1f1f1f"><path d="m370-80-16-128q-13-5-24.5-12T307-235l-119 50L78-375l103-78q-1-7-1-13.5v-27q0-6.5 1-13.5L78-585l110-190 119 50q11-8 23-15t24-12l16-128h220l16 128q13 5 24.5 12t22.5 15l119-50 110 190-103 78q1 7 1 13.5v27q0 6.5-2 13.5l103 78-110 190-118-50q-11 8-23 15t-24 12L590-80H370Zm112-260q58 0 99-41t41-99q0-58-41-99t-99-41q-59 0-99.5 41T342-480q0 58 40.5 99t99.5 41Z"/></svg>
+        <svg class="footer-bar__icon" id="settings-icon" xmlns="http://www.w3.org/2000/svg" height="42px" viewBox="0 -960 960 960" width="42px" fill="#1f1f1f"><path d="m370-80-16-128q-13-5-24.5-12T307-235l-119 50L78-375l103-78q-1-7-1-13.5v-27q0-6.5 1-13.5L78-585l110-190 119 50q11-8 23-15t24-12l16-128h220l16 128q13 5 24.5 12t22.5 15l119-50 110 190-103 78q1 7 1 13.5v27q0 6.5-2 13.5l103 78-110 190-118-50q-11 8-23 15t-24 12L590-80H370Zm112-260q58 0 99-41t41-99q0-58-41-99t-99-41q-59 0-99.5 41T342-480q0 58 40.5 99t99.5 41Z"/></svg>
         <div class="footer-bar__info">
           <a href="https://github.com/Kalinkanya" target="_blank">
             <img src="assets/svg/github_logo.svg" alt="github_logo" class="footer__logo">
@@ -110,6 +116,33 @@
         <svg class="footer-bar__icon" xmlns="http://www.w3.org/2000/svg" height="42px" viewBox="0 -960 960 960" width="42px" fill="#1f1f1f"><path d="M222-200 80-342l56-56 85 85 170-170 56 57-225 226Zm0-320L80-662l56-56 85 85 170-170 56 57-225 226Zm298 240v-80h360v80H520Zm0-320v-80h360v80H520Z"/></svg>
       </div>
     </footer>
+    <div class="modal-settings">
+      <div class="setting-item">
+        <label for="setting-time" class="setting-item__label">время</label>
+        <input type="checkbox" checked id="setting-time" class="setting-item__input" data-target="time">
+      </div>
+      <div class="setting-item">
+        <label for="setting-data" class="setting-item__label">дата</label>
+        <input type="checkbox" checked id="setting-date" class="setting-item__input" data-target="date">
+      </div>
+      <div class="setting-item">
+        <label for="setting-greeting" class="setting-item__label">приветствие</label>
+        <input type="checkbox" checked id="setting-greeting" class="setting-item__input" data-target="greeting">
+      </div>
+      <div class="setting-item">
+        <label for="setting-quote" class="setting-item__label">цитата дня</label>
+        <input type="checkbox" checked id="setting-quote" class="setting-item__input" data-target="quote">
+      </div>
+      <div class="setting-item">
+        <label for="setting-weather" class="setting-item__label">погода</label>
+        <input type="checkbox" checked id="setting-weather" class="setting-item__input" data-target="weather">
+      </div>
+      <div class="setting-item">
+        <label for="setting-audio" class="setting-item__label">аудиоплеер</label>
+        <input type="checkbox" checked id="setting-audio" class="setting-item__input" data-target="audio">
+      </div>
+    </div>
+    <div class="overlay"></div>
     <script type="module" src="./main.js"></script>
   </body>
 </html>

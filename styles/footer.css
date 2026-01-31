@@ -1,3 +1,10 @@
+.quote {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+
 .change-qoute__btn {
   outline: none;
   border: none;
@@ -21,6 +28,8 @@
 }
 
 .footer-bar__icon {
+  position: relative;
+  z-index: 3;
   fill: var(--color-text);
   margin: 20px;
   cursor: pointer;

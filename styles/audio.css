@@ -1,11 +1,15 @@
+.audioplayer-wrapper {
+  width: 450px;
+}
+
 .player__container {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 40px;
   padding: 10px;
-  border-radius: 10px;
   height: 100%;
+  transition: all 0.5s ease;
 }
 
 .player-controls {

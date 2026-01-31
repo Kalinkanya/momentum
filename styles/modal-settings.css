@@ -1,0 +1,59 @@
+.modal-settings {
+  position: fixed;
+  bottom: 100px;
+  left: 50px;
+  width: 250px;
+  height: 300px;
+  z-index: 3;
+  border: 2px solid var(--color-active);
+  background-color: var(--color-shadow);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  padding-inline: 20px;
+  padding-top: 20px;
+  gap: 10px;
+  transform: translateX(-150%);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s linear;
+}
+
+.modal-settings.visible {
+  opacity: 0.7;
+  visibility: visible;
+  transform: translateX(0%);
+}
+
+.setting-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.setting-item__input {
+  display: inline-grid;
+  place-content: center;
+  width: 30px;
+  height: 30px;
+  background-color: var(--color-text);
+  appearance: none;
+  border-radius: 10px;
+  border: 2px solid var(--color-active);
+  cursor: pointer;
+}
+
+.setting-item__input:checked::after {
+  content: '✓';
+  color: var(--color-shadow);
+}
+
+.setting-item__label {
+  font-size: 1.2rem;
+}
+
+.invisible {
+  opacity: 0;
+  visibility: hidden;
+}

@@ -1,5 +1,11 @@
+.time-wrapper, .date-wrapper {
+  height: 80px;
+  line-height: 80px;
+}
+
 .time, .date {
   text-shadow: var(--box-shadow);
+  transition: all 0.5s ease;
 }
 
 .time {
