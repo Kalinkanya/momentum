@@ -4,7 +4,8 @@ import { initGreeting } from './js/greeting.js';
 import { initAudioPlayer } from './js/audio/audio-core.js';
 import { initWeather } from './js/weather.js';
 import { initQoutes } from './js/quote.js';
-import { initModalSettings } from './js/modals.js'
+import { initModalSettings } from './js/modal-settings.js';
+import { initModalToDo } from './js/modal-todo.js';
 
 initSliderBg();
 initClock();
@@ -13,4 +14,5 @@ initAudioPlayer();
 initWeather();
 initQoutes();
 initModalSettings();
+initModalToDo();
 

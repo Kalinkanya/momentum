@@ -113,7 +113,7 @@
             <img src="assets/svg/rs_school_logo.svg" alt="rs_school_logo" class="footer__logo">
           </a>
         </div>
-        <svg class="footer-bar__icon" xmlns="http://www.w3.org/2000/svg" height="42px" viewBox="0 -960 960 960" width="42px" fill="#1f1f1f"><path d="M222-200 80-342l56-56 85 85 170-170 56 57-225 226Zm0-320L80-662l56-56 85 85 170-170 56 57-225 226Zm298 240v-80h360v80H520Zm0-320v-80h360v80H520Z"/></svg>
+        <svg class="footer-bar__icon" id="todo-icon" xmlns="http://www.w3.org/2000/svg" height="42px" viewBox="0 -960 960 960" width="42px" fill="#1f1f1f"><path d="M222-200 80-342l56-56 85 85 170-170 56 57-225 226Zm0-320L80-662l56-56 85 85 170-170 56 57-225 226Zm298 240v-80h360v80H520Zm0-320v-80h360v80H520Z"/></svg>
       </div>
     </footer>
     <div class="modal-settings">
@@ -141,6 +141,36 @@
         <label for="setting-audio" class="setting-item__label">аудиоплеер</label>
         <input type="checkbox" checked id="setting-audio" class="setting-item__input" data-target="audio">
       </div>
+    </div>
+    <div class="modal-todo">
+      <h1 class="modal-todo__title">Список дел:</h1>
+      <div class="modal-todo__input-container">
+        <input type="text" class="modal-todo__input" placeholder="Новая задача...">
+        <button class="modal-todo__add-btn" type="button">Добавить</button>
+      </div>
+      <ul class="modal-todo__list">
+        <li class="modal-todo__item">
+          <label class="modal-todo__label">
+            <input type="checkbox" class="modal-todo__checkbox">
+            <span class="modal-todo__text">погулять</span>
+          </label>
+          <svg class="modal-todo__delete-svg" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+        </li>
+        <li class="modal-todo__item">
+          <label class="modal-todo__label">
+            <input type="checkbox" class="modal-todo__checkbox">
+            <span class="modal-todo__text">поработать</span>
+          </label>
+          <svg class="modal-todo__delete-svg" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+        </li>
+        <li class="modal-todo__item">
+          <label class="modal-todo__label">
+            <input type="checkbox" class="modal-todo__checkbox">
+            <span class="modal-todo__text">поиграть</span>
+          </label>
+          <svg class="modal-todo__delete-svg" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+        </li>
+      </ul>
     </div>
     <div class="overlay"></div>
     <script type="module" src="./main.js"></script>

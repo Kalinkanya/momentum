@@ -1,17 +1,18 @@
 const settingsIcon = document.getElementById('settings-icon');
 const modalSettings = document.querySelector('.modal-settings');
+const modalToDo = document.querySelector('.modal-todo');
 const overlay = document.querySelector('.overlay');
 
 const settingItemInput = document.querySelectorAll('.setting-item__input');
 
 function toggleSettingsModal() {
   modalSettings.classList.toggle('visible');
-  overlay.classList.toggle('visible');
+  modalToDo.classList.remove('visible');
+  overlay.classList.remove('visible');
 }
 
 export function initModalSettings() {
   settingsIcon.addEventListener('click', toggleSettingsModal);
-  overlay.addEventListener('click', toggleSettingsModal);
 
   settingItemInput.forEach((input) => {
     const targetId = input.dataset.target;

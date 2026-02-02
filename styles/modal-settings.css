@@ -46,7 +46,8 @@
 
 .setting-item__input:checked::after {
   content: '✓';
-  color: var(--color-shadow);
+  color: var(--color-accent);
+  font-weight: bold;
 }
 
 .setting-item__label {

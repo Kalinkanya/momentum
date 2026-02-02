@@ -6,6 +6,7 @@
 @import url('./weather.css');
 @import url('./footer.css');
 @import url('./modal-settings.css');
+@import url('./modal-todo.css');
 
 @font-face {
     font-family: 'Mulish';
@@ -18,7 +19,9 @@
 :root {
   --color-text: #f8f9fa;
   --color-shadow: #14213d;
-  --color-active: #fca311;
+  --color-active: #bb3e03;
+  --color-accent: #000814;
+  --color-checked: #3e8914;
 
   --font-mulish: Mulish, sans-serif;
 
@@ -85,3 +88,4 @@ footer {
 .overlay.visible {
   display: block;
 }
+
