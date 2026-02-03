@@ -19,7 +19,9 @@ export function initModalSettings() {
     const targetElement = document.querySelector(`.${targetId}`);
     
     const saved = localStorage.getItem(targetId);
-    input.checked = saved === 'true';
+    if (saved !== null) {
+      input.checked = saved === 'true';
+    }
     if (input.checked) {
       targetElement.classList.remove('invisible');
     } else {

@@ -6,7 +6,7 @@
   bottom: 100px;
   right: 50px;
   width: 400px;
-  height: 300px;
+  max-height: 500px;
   z-index: 3;
   border: 2px solid var(--color-active);
   background-color: var(--color-shadow);
@@ -16,6 +16,24 @@
   opacity: 0;
   visibility: hidden;
   transition: all 0.5s linear;
+  overflow: auto;
+}
+
+.modal-todo::-webkit-scrollbar {
+  width: 10px;
+}
+
+.modal-todo::-webkit-scrollbar-track {
+  background: var(--color-text-rgb);
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.modal-todo::-webkit-scrollbar-thumb {
+  background: var(--color-active);
+  border-radius: 5px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
 }
 
 .modal-todo.visible {
@@ -84,6 +102,7 @@
   border-radius: 50%;
   border: 2px solid var(--color-active);
   cursor: pointer;
+  flex-shrink: 0;
 }
 
 .modal-todo__checkbox:checked::after {
@@ -99,6 +118,10 @@
   border-color: var(--color-checked);
 }
 
+.modal-todo__text {
+  word-break: break-word;
+}
+
 .checked {
   text-decoration: line-through;
 }
@@ -106,4 +129,5 @@
 .modal-todo__delete-svg {
   fill: var(--color-text);
   cursor: pointer;
+  flex-shrink: 0;
 }
