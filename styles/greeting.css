@@ -32,3 +32,23 @@
 .greeting__input::placeholder {
   opacity: 0.6;
 }
+
+@media(max-width: 810px) {
+  .greeting-container {
+    gap: 8px;
+  }
+
+  .greeting__span, .greeting__input {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .greeting-container {
+    gap: 5px;
+  }
+
+  .greeting__span, .greeting__input {
+    font-size: 1.2rem;
+  }
+}

@@ -6,7 +6,7 @@ let data = [];
 
 function showRandomQuote() {
   const randomIndex = Math.floor(Math.random() * data.length);
-  quote.textContent = data[randomIndex].text;
+  quote.textContent = `"${data[randomIndex].text}"`;
   author.textContent = data[randomIndex].author;
 }
 

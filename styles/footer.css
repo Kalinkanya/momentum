@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: center;
   transition: all 0.5s ease;
+  margin: 10px;
 }
 
 .change-qoute__btn {
@@ -19,6 +20,11 @@
 .change-qoute__btn svg {
   fill: var(--color-text);
   transition: all 0.3s ease;
+}
+
+.quote__text {
+  hyphens: auto;
+  text-align: justify;
 }
 
 .footer-bar {
@@ -58,4 +64,34 @@
 
 .footer__logo:hover {
   scale: 1.2;
+}
+
+@media (max-width: 600px) {
+  .footer-bar {
+    padding-inline: 10px;
+  }
+
+  .footer-bar__info {
+    gap: 20px;
+  }
+
+  .footer-bar__icon {
+    margin: 10px;
+  }
+}
+
+@media (max-width: 420px) {
+  .footer-bar__icon {
+    height: 28px;
+    width: 28px;
+  }
+
+  .footer-bar__info {
+    gap: 8px;
+  }
+
+  .footer__logo {
+    height: 16px;
+    margin: 8px;
+  }
 }
