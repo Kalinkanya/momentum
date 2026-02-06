@@ -1,5 +1,7 @@
 # momentum
 
+https://kalinkanya.github.io/momentum/
+
 *учебный проект*
 
 **Momentum** - аналог [одноимённого приложения](https://chrome.google.com/webstore/detail/momentum/laookkfknpbbblfpciffpaejjkokdgca?hl=ru) интернет-магазина Chrome. Приложение показывает время и имя пользователя. Фоновое изображение и приветствие меняются в зависимости от времени суток.  
