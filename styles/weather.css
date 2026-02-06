@@ -1,3 +1,7 @@
+.weather-wrapper {
+  width: 20%;
+}
+
 .weather {
   display: flex;
   flex-direction: column;
@@ -44,4 +48,34 @@
 
 .weather-error {
   color: var(--color-active);
+}
+
+@media (max-width: 1100px) {
+  .weather-wrapper {
+    width: 40%;
+  }
+}
+
+@media (max-width: 810px) {
+  .weather{
+  font-size: 1rem;
+  padding: 0;
+  }
+
+  .temperature {
+  font-size: 1rem;
+  }
+
+  .wind-humidaty__container {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .city {
+  font-size: 1rem;
+}
+
+.weather-icon {
+  font-size: 2rem;
+}
 }

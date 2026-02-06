@@ -15,3 +15,13 @@
 .date {
   font-size: 2rem;
 }
+
+@media (max-width: 810px) {
+  .time {
+    font-size: 3rem;
+  }
+
+  .date {
+    font-size: 1rem;
+  }
+}

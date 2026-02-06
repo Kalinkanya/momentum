@@ -58,3 +58,13 @@
   opacity: 0;
   visibility: hidden;
 }
+
+@media (max-width: 420px) {
+  .modal-settings {
+    left: 50%;
+  }
+
+  .modal-settings.visible {
+    transform: translateX(-50%);
+  }
+}

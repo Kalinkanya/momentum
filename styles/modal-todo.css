@@ -5,7 +5,7 @@
   position: fixed;
   bottom: 100px;
   right: 50px;
-  width: 400px;
+  width: max(280px, 25%);
   max-height: 500px;
   z-index: 3;
   border: 2px solid var(--color-active);
@@ -133,5 +133,14 @@
 .modal-todo__delete-svg {
   fill: var(--color-text);
   cursor: pointer;
-  flex-shrink: 0;
+}
+
+@media (max-width: 420px) {
+  .modal-todo {
+    left: 50%;
+  }
+
+  .modal-todo.visible {
+    transform: translateX(-50%);
+  }
 }

@@ -1,5 +1,5 @@
 .audioplayer-wrapper {
-  width: 450px;
+  width: 500px;
 }
 
 .player__container {
@@ -17,13 +17,19 @@
   flex-direction: column;
   align-items: center;
   gap: 20px;
+  width: 100%;
 }
 
 .player-controls-buttens {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
+}
+
+.player-controls-buttens__container {
+  display: flex;
+  gap: 8px;
 }
 
 .play__btn {
@@ -37,6 +43,8 @@
   padding: 3px;
   cursor: pointer;
   transition: 0.5s ease;
+  flex-shrink: 0;
+  height: 36px;
 }
 
 .play__btn:hover {
@@ -74,7 +82,7 @@
   list-style-type: '☀';
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 8px;
 }
 
 .timeline {
@@ -106,6 +114,7 @@
   border-radius: 50%;
   padding: 3px;
   cursor: pointer;
+  height: 36px;
 }
 
 .volume-on__svg, .volume-off__svg {
@@ -115,8 +124,6 @@
 .hidden {
   display: none;
 }
-
-/* *********************************  */
 
 .controls-volume {
   -webkit-appearance: none;
@@ -145,4 +152,55 @@
   border: 2px solid #fff;
   cursor: pointer;
   margin-top: -7px;
+}
+
+@media (max-width: 810px) {
+  .audioplayer-wrapper {
+    width: 55%;
+  }
+
+  .player__container {
+    gap: 10px;
+    padding: 0;
+    padding-right: 5px;
+  }
+
+  .play__btn, .volume-on-off__btn {
+    height: 28px;
+  }
+
+  .play__btn svg,
+  .volume-on-off__btn svg {
+    height: 16px;
+    width: 16px;
+  }
+
+  .progress {
+    width: 200px;
+  }
+
+  .player-controls-buttons {
+    flex-direction: column;
+    gap: 20px
+  }
+
+  .progress {
+    width: 200px;
+  }
+}
+
+@media (max-width: 600px) {
+  .player-list {
+    display: none;
+  }
+
+  .player-controls {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .progress {
+    width: 150px;
+  }
 }
